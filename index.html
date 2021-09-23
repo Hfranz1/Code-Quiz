@@ -35,11 +35,61 @@
         </section>
         <section id="questionContainer">
             <div id="question1">
-                <h2></h2>
-                
+                <h2> You can use this when debugging code: </h2>
+                <ul>
+                    <button id="option1A">Console Log</button>
+                    <button id="option1B">JavaScript</button>
+                    <button id="option1C">For Loops</button>
+                    <button id="option1D">Terminal/Bash</button>
+                </ul>
             </div>
+            <div id="question2">
+                <h2>The condition in an if/else statement is enclosed within____.</h2>
+                <ul>
+                    <button id="option2A">Quotes</button>
+                    <button id="option2B">Curly Brackets</button>
+                    <button id="option2C">Parentheses</button>
+                    <button id="option2D">Square Brackets</button>
+                </ul>
+            </div>
+            <div id="question3">
+                <h2> String values must be enclosed within____ when being assigned to variables.</h2>
+                <ul>
+                    <button id="option3A">Commas</button>
+                    <button id="option3B">Quotes</button>
+                    <button id="option3C">Parentheses</button>
+                    <button id="option3D">Curly Brackets</button>
+                </ul>
+            </div>
+            <div id="question4">
+                <h2>Arrays in JavaScript can be used to store____.</h2>
+                <ul>
+                    <button id="option4A">Numbers and Strings</button>
+                    <button id="option4B">Other Arrays</button>
+                    <button id="option4C">Booleans</button>
+                    <button id="option4D">All of the Above</button>
+                </ul>
+            </div>
+            <p id="answerFeedback"></p>
+        </section>
+        <section id="finalScore">
+            <h2>All done! </h2>
+            <form action="./assets/js/script.js">
+                <label for="initials">Enter Initials:</label>
+                <input type="text" id="initials" name="initials" />
+            </form>
+            <button id="submitButtion">Submit</button>
+        </section>
+        <section id="highscore">
+            <h2>Highscore</h2>
+            <ul>
+                <button id="goBackButton">Back</button>
+                <button id="clearHighscores">Clear Highscores</button>
+            </ul>
+            <div id="highscoreDiv"></div>
         </section>
     </main>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
