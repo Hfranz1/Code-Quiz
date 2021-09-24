@@ -1,7 +1,7 @@
 var startQuizButton = document.getElementById("startQuizButton");
 var submitButton = document.getElementById("submitButton");
 var goBackButton = document.getElementById("goBackButton");
-var clearHighScores =document.getElementById("ClearHighscore");
+var clearHighScores = document.getElementById("ClearHighscore");
 
 var mainPage = document.getElementById("mainPage");
 var questionContainer = document.getElementById("questionContainer");
@@ -50,7 +50,7 @@ var btn4D = document.getElementById("option4D");
 var anserFeedback = document.getElementById("answerFeedback");
 
 
-startQuizButton.addEventListener("click", function(){
+startQuizButton.addEventListener("click", function () {
     mainPage.style.display = "none";
     questionContainer.style.display = "block";
     question1.style.display = "block";
@@ -60,141 +60,141 @@ startQuizButton.addEventListener("click", function(){
 
 function displayTime() {
     timerImput.textContent = timeLeft;
-    var timeCount = setInterval = (function() {
+    var timeCount = setInterval = (function () {
         timeLeft--;
         timerImput.textContent = timeLeft;
-        if(timeLeft<=0){
+        if (timeLeft <= 0) {
             quizOver();
             clearInterval(timeCount);
         };
-    },1000);
+    }, 1000);
 };
 
 
-btn1A.addEventListener("click", function(){
+btn1A.addEventListener("click", function () {
     userScore = timeLeft;
-    anserFeedback.textContent ="Correct";
+    anserFeedback.textContent = "Correct";
     question1.style.display = "none";
     question2.style.display = "block";
 });
 
-btn1B.addEventListener("click", function(){
-    timeLeft-=10;
+btn1B.addEventListener("click", function () {
+    timeLeft -= 10;
     userScore = timeLeft;
-    anserFeedback.textContent ="Wrong";
+    anserFeedback.textContent = "Wrong";
     question1.style.display = "none";
     question2.style.display = "block";
 
 });
 
-btn1C.addEventListener("click", function(){
-    timeLeft-=10;
+btn1C.addEventListener("click", function () {
+    timeLeft -= 10;
     userScore = timeLeft;
-    anserFeedback.textContent ="Wrong";
+    anserFeedback.textContent = "Wrong";
     question1.style.display = "none";
     question2.style.display = "block";
 });
 
-btn1D.addEventListener("click", function(){
-    timeLeft-=10;
+btn1D.addEventListener("click", function () {
+    timeLeft -= 10;
     userScore = timeLeft;
-    anserFeedback.textContent ="Wrong";
+    anserFeedback.textContent = "Wrong";
     question1.style.display = "none";
     question2.style.display = "block";
 });
 
 
-btn2A.addEventListener("click", function(){
-    timeLeft-=10;
+btn2A.addEventListener("click", function () {
+    timeLeft -= 10;
     userScore = timeLeft;
-    anserFeedback.textContent ="Wrong";
+    anserFeedback.textContent = "Wrong";
     question2.style.display = "none";
     question3.style.display = "block";
 });
 
-btn2B.addEventListener("click", function(){
-    timeLeft-=10;
+btn2B.addEventListener("click", function () {
+    timeLeft -= 10;
     userScore = timeLeft;
-    anserFeedback.textContent ="Wrong";
+    anserFeedback.textContent = "Wrong";
     question2.style.display = "none";
     question3.style.display = "block";
 });
 
-btn2C.addEventListener("click", function(){
+btn2C.addEventListener("click", function () {
     userScore = timeLeft;
-    anserFeedback.textContent ="Correct";
+    anserFeedback.textContent = "Correct";
     question2.style.display = "none";
     question3.style.display = "block";
 });
 
-btn2D.addEventListener("click", function(){
-    timeLeft-=10;
+btn2D.addEventListener("click", function () {
+    timeLeft -= 10;
     userScore = timeLeft;
-    anserFeedback.textContent ="Wrong";
+    anserFeedback.textContent = "Wrong";
     question2.style.display = "none";
     question3.style.display = "block";
 });
 
 
-btn3A.addEventListener("click", function(){
-    timeLeft-=10;
+btn3A.addEventListener("click", function () {
+    timeLeft -= 10;
     userScore = timeLeft;
-    anserFeedback.textContent ="Wrong";
+    anserFeedback.textContent = "Wrong";
     question3.style.display = "none";
     question4.style.display = "block";
 });
 
-btn3B.addEventListener("click", function(){
+btn3B.addEventListener("click", function () {
     userScore = timeLeft;
-    anserFeedback.textContent ="Correct";
+    anserFeedback.textContent = "Correct";
     question3.style.display = "none";
     question4.style.display = "block";
 });
 
-btn3C.addEventListener("click", function(){
-    timeLeft-=10;
+btn3C.addEventListener("click", function () {
+    timeLeft -= 10;
     userScore = timeLeft;
-    anserFeedback.textContent ="Wrong";
+    anserFeedback.textContent = "Wrong";
     question3.style.display = "none";
     question4.style.display = "block";
 });
 
-btn3D.addEventListener("click", function(){
-    timeLeft-=10;
+btn3D.addEventListener("click", function () {
+    timeLeft -= 10;
     userScore = timeLeft;
-    anserFeedback.textContent ="Wrong";
+    anserFeedback.textContent = "Wrong";
     question3.style.display = "none";
     question4.style.display = "block";
 });
 
 
-btn4A.addEventListener("click", function(){
-    timeLeft-=10;
+btn4A.addEventListener("click", function () {
+    timeLeft -= 10;
     userScore = timeLeft;
-    anserFeedback.textContent ="Wrong";
+    anserFeedback.textContent = "Wrong";
     question4.style.display = "none";
     quizOver();
 });
 
-btn4B.addEventListener("click", function(){
-    timeLeft-=10;
+btn4B.addEventListener("click", function () {
+    timeLeft -= 10;
     userScore = timeLeft;
-    anserFeedback.textContent ="Wrong";
+    anserFeedback.textContent = "Wrong";
     question4.style.display = "none";
     quizOver();
 });
 
-btn4C.addEventListener("click", function(){
-    timeLeft-=10;
+btn4C.addEventListener("click", function () {
+    timeLeft -= 10;
     userScore = timeLeft;
-    anserFeedback.textContent ="Wrong";
+    anserFeedback.textContent = "Wrong";
     question4.style.display = "none";
     quizOver();
 });
 
-btn4D.addEventListener("click", function(){
+btn4D.addEventListener("click", function () {
     userScore = timeLeft;
-    anserFeedback.textContent ="Correct";
+    anserFeedback.textContent = "Correct";
     question4.style.display = "none";
     quizOver();
 });
@@ -209,25 +209,56 @@ function quizOver() {
 
 var endScores = JSON.parse(localStorage.getItem("scores"));
 if (endScores) {
-    endScores =JSON.parse(localStorage.getItem("scores"));
-}else{
-    endScores =[];
+    endScores = JSON.parse(localStorage.getItem("scores"));
+} else {
+    endScores = [];
 };
 
 
-submitButton.addEventListener("click", function() {
+submitButton.addEventListener("click", function () {
     var userInitials = initials.value;
     endScores.push({
         initials: userInitials,
         score: userScore,
     });
-localStorage.setItem("scores", JSON.stringify(endScores));
-highScorePage.style.display = "block";
-finalScorePage.style.display = "none";
-endScores.forEach(element => {
-    var p=document.createElement("p");
-    p.innerText = 'Initials: ${element.initials} Score: ${element.score}';
-    highscoreDiv.append(p);
-});
+    localStorage.setItem("scores", JSON.stringify(endScores));
+    highScorePage.style.display = "block";
+    finalScorePage.style.display = "none";
+    endScores.forEach(element => {
+        var p = document.createElement("p");
+        p.innerText = 'Initials: ${element.initials} Score: ${element.score}';
+        highscoreDiv.append(p);
+    });
 });
 
+document.querySelector("#initials").addEventListener("keypress", function(event){
+    if (event.key==="Enter"){
+        event.preventDefault();
+        var userInitials = initials.value;
+        endScores.push({
+            initials: userInitials,
+            score: userScore,
+        });
+        localStorage.setItem("scores", JSON.stringify(endScores));
+        highScorePage.style.display = "block";
+        finalScorePage.style.display = "none";
+        endScores.forEach(element => {
+            var p=document.createElement("p");
+            p.innerText = 'Initials: ${element.initials} Score: ${element.score}';
+            highscoreDiv.append(p);
+        });
+    };
+});
+
+
+clearHighScores.addEventListener("click", function(){
+    localStorage.clear();
+    highscoreDiv.innerHTML="";
+});
+
+
+goBackButton.addEventListener("click", function(){
+    mainPage.style.display = "block";
+    highScorePage.style.display = "none";
+    location.reload();
+});
