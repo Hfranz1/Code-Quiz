@@ -200,3 +200,34 @@ btn4D.addEventListener("click", function(){
 });
 
 
+function quizOver() {
+    questionContainer.style.display = "none";
+    finalScorePage.style.display = "block";
+    timerImput.style.display = "none";
+};
+
+
+var endScores = JSON.parse(localStorage.getItem("scores"));
+if (endScores) {
+    endScores =JSON.parse(localStorage.getItem("scores"));
+}else{
+    endScores =[];
+};
+
+
+submitButton.addEventListener("click", function() {
+    var userInitials = initials.value;
+    endScores.push({
+        initials: userInitials,
+        score: userScore,
+    });
+localStorage.setItem("scores", JSON.stringify(endScores));
+highScorePage.style.display = "block";
+finalScorePage.style.display = "none";
+endScores.forEach(element => {
+    var p=document.createElement("p");
+    p.innerText = 'Initials: ${element.initials} Score: ${element.score}';
+    highscoreDiv.append(p);
+});
+});
+
