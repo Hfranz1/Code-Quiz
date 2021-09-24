@@ -95,14 +95,6 @@ btn1C.addEventListener("click", function () {
     question2.style.display = "block";
 });
 
-btn1D.addEventListener("click", function () {
-    timeLeft -= 10;
-    userScore = timeLeft;
-    anserFeedback.textContent = "Wrong";
-    question1.style.display = "none";
-    question2.style.display = "block";
-});
-
 
 btn2A.addEventListener("click", function () {
     timeLeft -= 10;
@@ -120,14 +112,14 @@ btn2B.addEventListener("click", function () {
     question3.style.display = "block";
 });
 
-btn2C.addEventListener("click", function () {
+btn2C.addEventListener("click", function(){
     userScore = timeLeft;
     anserFeedback.textContent = "Correct";
     question2.style.display = "none";
     question3.style.display = "block";
 });
 
-btn2D.addEventListener("click", function () {
+btn2D.addEventListener("click", function(){
     timeLeft -= 10;
     userScore = timeLeft;
     anserFeedback.textContent = "Wrong";
@@ -136,7 +128,7 @@ btn2D.addEventListener("click", function () {
 });
 
 
-btn3A.addEventListener("click", function () {
+btn3A.addEventListener("click", function(){
     timeLeft -= 10;
     userScore = timeLeft;
     anserFeedback.textContent = "Wrong";
@@ -144,14 +136,14 @@ btn3A.addEventListener("click", function () {
     question4.style.display = "block";
 });
 
-btn3B.addEventListener("click", function () {
+btn3B.addEventListener("click", function(){
     userScore = timeLeft;
     anserFeedback.textContent = "Correct";
     question3.style.display = "none";
     question4.style.display = "block";
 });
 
-btn3C.addEventListener("click", function () {
+btn3C.addEventListener("click", function(){
     timeLeft -= 10;
     userScore = timeLeft;
     anserFeedback.textContent = "Wrong";
@@ -159,7 +151,7 @@ btn3C.addEventListener("click", function () {
     question4.style.display = "block";
 });
 
-btn3D.addEventListener("click", function () {
+btn3D.addEventListener("click", function(){
     timeLeft -= 10;
     userScore = timeLeft;
     anserFeedback.textContent = "Wrong";
@@ -168,7 +160,7 @@ btn3D.addEventListener("click", function () {
 });
 
 
-btn4A.addEventListener("click", function () {
+btn4A.addEventListener("click", function (){
     timeLeft -= 10;
     userScore = timeLeft;
     anserFeedback.textContent = "Wrong";
